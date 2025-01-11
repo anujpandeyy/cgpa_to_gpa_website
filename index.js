@@ -12,13 +12,18 @@ convertBtn.onclick = function(){
         return;
     }
 
+    if(cgpa>10.0){
+        myResult.textContent = "CGPA can not be greater than 10.0";
+        return;
+    }
+
     if(isNaN(cgpa)){
        myResult.textContent = "Please enter a valid number.";
        return;
     }
 
     gpa = (cgpa/10)*4;
-    myResult.textContent = `Your GPA out of 4 is ${gpa}`;
+    myResult.textContent = `Your GPA out of 4 is ${gpa.toFixed(2)}`;
 }
 
 clearBtn.addEventListener('click',()=>{
