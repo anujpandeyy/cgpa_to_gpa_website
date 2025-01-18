@@ -8,7 +8,7 @@ convertBtn.onclick = function(){
     var cgpa = Number(userCGPA.value);
 
     if(cgpa<=0){
-        myResult.textContent = "CGPA can not be 0 or negative."; 
+        myResult.textContent = "CGPA cannot be 0 or negative."; 
         return;
     }
 
